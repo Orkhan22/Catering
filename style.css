@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2705882353);
+}
+nav .navbar-container {
+  width: 60%;
+  height: 65px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+nav .navbar-container .navbar-logo .logo-main {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 17px 13px;
+  color: white;
+}
+nav .navbar-container .navbar-list {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav .navbar-container .navbar-list ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+nav .navbar-container .navbar-list ul .book {
+  width: 125px;
+  height: 55px;
+  display: inline-block;
+  background-color: #c8a97e;
+  padding: 17px 13px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 720px;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+.slider-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #6209a0;
+}
+.slider-container .side {
+  width: 100%;
+  text-align: center;
+  background-color: cornflowerblue;
+  position: absolute;
+  transition: 2s;
+  border: 4px solid black;
+  transition: 2s;
+}
+.slider-container .side .blur {
+  position: absolute;
+  top: 0;
+  width: 101%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7019607843);
+  z-index: 1;
+}
+.slider-container .side .info {
+  position: absolute;
+  top: 23%;
+  margin: 0 auto;
+  right: 26%;
+  z-index: 2;
+}
+.slider-container .side .info h1 {
+  font-size: 80px;
+  color: #c8a97e;
+  font-weight: normal;
+  font-family: "Great Vibes", cursive;
+  line-height: 1;
+}
+.slider-container .side .info p {
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: "Poppins", Arial, sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.slider-container .btn {
+  z-index: 1;
+  position: absolute;
+  top: 23px;
+  font-size: 20px;
+  color: wheat;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.44s;
+}
+.slider-container .btn:hover {
+  transform: scale(1.187);
+  color: red;
+  transition: 0.44s;
+}
+.slider-container .fa-circle-chevron-right {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  font-size: 35px;
+  right: 6px;
+  color: wheat;
+}
+.slider-container .fa-circle-chevron-left {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  font-size: 35px;
+  left: 6px;
+}
+.slider .menu-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+  align-items: end;
+}
+.slider .menu-list .list1 {
+  text-align: center;
+}
+.slider .menu-list .list1 img {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.slider .menu-list .list1 h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.slider .menu-list .list1 p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.section2 {
+  width: 100%;
+}
+.section2 .section2-container {
+  display: flex;
+  width: 73%;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+.section2 .section2-container .cook {
+  width: 73%;
+}
+.section2 .section2-container .cook img {
+  width: 320px;
+  height: 520px;
+  object-fit: cover;
+}
+.section2 .section2-container .cook-info {
+  position: relative;
+  padding: 4em 0;
+}
+.section2 .section2-container .cook-info span {
+  color: black;
+  font-family: "Poppins", Arial, sans-serif;
+  position: absolute;
+  top: 18px;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  font-family: "Great Vibes", cursive;
+  z-index: -1;
+}
+.section2 .section2-container .cook-info h2 {
+  color: black;
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+}
+.section2 .section2-container .cook-info p {
+  color: black;
+  width: 445px;
+  height: auto;
+  font-size: 17px;
+  opacity: 75%;
+  margin-bottom: 50px;
+}
+.section2 .section2-container .cook-info .time p {
+  color: black;
+}
+.section2 .section2-container .cook-info .time h4 a {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.section3 {
+  width: 100%;
+}
+.section3 .progress-container {
+  width: 1120px;
+  height: 152px;
+  margin: 0 auto;
+  display: flex;
+}
+.section3 .progress-container .progress-percent {
+  width: 855px;
+  height: 152px;
+}
+.section3 .progress-container .progress-percent .info-bar {
+  width: 855px;
+  height: 72px;
+  display: flex;
+}
+.section3 .progress-container .progress-percent .info-bar .info-text {
+  width: 213px;
+  height: 72px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section3 .progress-container .progress-percent .info-bar .info-text strong {
+  font-weight: 600;
+  font-size: 44px;
+  color: #c8a97e;
+  display: block;
+  line-height: 1;
+}
+.section3 .progress-container .progress-percent .info-bar .info-text span {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+.section3 .progress-container .progress-info p {
+  text-align: left !important;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+  color: #666666;
+}
+
+.section4 {
+  width: 100%;
+  padding: 7em 0;
+  background-color: #f8f9fa;
+}
+.section4 .service-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+.section4 .service-container .service-name {
+  text-align: center !important;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 3rem !important;
+}
+.section4 .service-container .service-name span {
+  position: absolute;
+  top: -50px;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  font-family: "Great Vibes", cursive;
+  z-index: 1;
+  left: 40%;
+  text-align: center;
+}
+.section4 .service-container .service-name h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  color: black;
+}
+.section4 .service-container .service-event {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 380px;
+  height: 270px;
+  display: flex;
+  gap: 52px;
+}
+.section4 .service-container .service-event .event-name {
+  width: 350px;
+  height: 270px;
+}
+.section4 .service-container .service-event .icon {
+  width: 350px;
+  height: 70px;
+  text-align: center;
+}
+.section4 .service-container .service-event .icon i {
+  font-size: 54px;
+  color: #c8a97e;
+}
+.section4 .service-container .service-event .event-info {
+  text-align: center;
+  width: 350px;
+  height: 182px;
+  padding: 0.5rem !important;
+  margin-top: 1rem !important;
+}
+.section4 .service-container .service-event .event-info h3 {
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+.section4 .service-container .service-event .event-info p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 2;
+  font-weight: 400;
+  color: #666666;
+}/*# sourceMappingURL=style.css.map */
