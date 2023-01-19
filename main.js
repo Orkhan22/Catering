@@ -63,3 +63,4 @@ function rightbutton() {
     console.log("saygac");
 }
 rightBtn.addEventListener("click", rightbutton)
+
