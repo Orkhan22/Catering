@@ -23,6 +23,7 @@
     />
   </head>
   <body>
+    
     <nav>
       <div class="navbar-container">
         <div class="navbar-logo">
@@ -30,12 +31,12 @@
         </div>
         <div class="navbar-list">
           <ul>
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html">Menu</a></li>
-            <li><a href="index.html">Stories</a></li>
-            <li><a href="index.html">Contact</a></li>
-            <li class="book"><a href="index.html">Book a table</a></li>
+            <li><a  href="index.html"> Home</a></li>
+            <li><a id="menu" href="#">Menu</a></li>
+            <li><a  id="section2" href="#">About</a></li>
+            <li><a id="services" href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="book"><a id="booking" href="#">Book a table</a></li>
           </ul>
         </div>
       </div>
@@ -102,7 +103,7 @@
       </div>
     </section>
 
-    <section class="section2">
+    <section id="section2" class="section2">
       <div class="section2-container">
         <div class="cook">
           <img src="./asset/section2/about.jpg.webp" alt="cooker1" />
@@ -129,24 +130,24 @@
       </div>
     </section>
 
-    <section class="About">
+    <section id="about" class="About">
       <div class="progress-container">
         <div class="progress-percent">
           <div class="info-bar">
             <div class="info-text">
-              <strong>18</strong>
+              <strong class="number1"></strong>
               <span>YEARS OF EXPERIENCED</span>
             </div>
             <div class="info-text">
-              <strong>100</strong>
+              <strong class="number2"></strong>
               <span>MENUS/DISH</span>
             </div>
             <div class="info-text">
-              <strong>50</strong>
+              <strong class="number3"></strong>
               <span>STAFF</span>
             </div>
             <div class="info-text">
-              <strong>15,000</strong>
+              <strong class="number4"></strong>
               <span>HAPPY CUSTOMERS</span>
             </div>
           </div>
@@ -199,7 +200,7 @@
         </div>
       </div>
     </section>
-    <section class="Menu">
+    <section  class="Menu">
       <div class="menu-container">
         <div class="menu-name">
           <span>Specalities</span>
@@ -432,6 +433,141 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="Booking">
+      <div class="booking-container">
+        <div
+          class="image"
+          style="
+            background-image: url(./asset/section6/bg_3.jpg.webp);
+            background-attachment: fixed;
+          "
+        ></div>
+        <div class="div">
+          <div class="title-booking">
+            <span>Book a table</span>
+            <h2>Make Reservation</h2>
+          </div>
+          <div class="form-booking">
+            <div class="form-info">
+              <div class="fg">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Time</label>
+                  <input type="time" class="form-control" placeholder="Time" />
+                </div>
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Phone</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Date</label>
+                  <input type="date" class="form-control" placeholder="Time" />
+                </div>
+              </div>
+              <!-- <div class="fg2">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Date</label>
+                      <input type="date" class="form-control" placeholder="Date">
+                      </div>
+                      <div class="form-group">
+                        <label for="">Person</label>
+                        <input type="person" class="form-control" placeholder="Person">
+                        </div>
+              </div> -->
+            </div>
+            <button type="submit">Make a Reservation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Blog">
+      <div class="blog-container">
+        <div class="blog-name">
+          <span>Blog</span>
+          <h2>Recent Posts</h2>
+        </div>
+        <div class="blog-card">
+          <div class="card-info">
+            <div class="card-photo">
+              </div>
+              <div class="card-text">
+                <span>Sept. 06, 2019</span> <span>Admin</span>
+                <h3><a href="#">Taste the delicious foods in Asia</a></h3>
+                <div class="read">
+                  <a href="#" class="float-left read">Read more</a>
+                  <a href="#" class="float-right meta-chat"
+                    ><span class="icon-chat">3</span> </a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card">
+            <div class="card-info">
+              <div class="card-photo">
+                </div>
+                <div class="card-text">
+                  <span>Sept. 06, 2019</span> <span>Admin</span>
+                  <h3><a href="#">Taste the delicious foods in Asia</a></h3>
+                  <div class="read">
+                    <a href="#" class="float-left read">Read more</a>
+                    <a href="#" class="float-right meta-chat"
+                      ><span class="icon-chat">3</span> </a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card">
+              <div class="card-info">
+                <div class="card-photo">
+                  </div>
+                  <div class="card-text">
+                    <span>Sept. 06, 2019</span> <span>Admin</span>
+                    <h3><a href="#">Taste the delicious foods in Asia</a></h3>
+                    <div class="read">
+                      <a href="#" class="float-left read">Read more</a>
+                      <a href="#" class="float-right meta-chat"
+                        ><span class="icon-chat">3</span> </a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      
     </section>
     <script
       src="https://kit.fontawesome.com/3f590eea27.js"
