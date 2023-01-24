@@ -144,6 +144,23 @@ num()
 const menu=document.querySelector("#menu")
 const about =document.querySelector("#section2")
 const services =document.querySelector("#services")
+const home=document.querySelector("#home")
+
+home.addEventListener("click",()=>{
+    let say=window.scrollY;
+    let interval =setInterval(()=>{
+        window.scrollTo(0,say);
+        say-=10;
+        if(say<=0){
+            clearInterval(interval);
+          
+        }
+        console.log(say)
+    },5)
+    
+
+})
+
 
 menu.addEventListener("click",()=>{
     let say=window.scrollY;
@@ -167,11 +184,22 @@ about.addEventListener("click",()=>{
         say+=10;
         if(say>=680){
             clearInterval(interval);
-          
+            
         }
         console.log(say);
     },5)
     
+    if(say>=682){
+
+        let intervall= setInterval(() => {
+            window.scrollTo(0,say);
+            say-=10;
+            if(say<=680){
+                clearInterval(intervall)
+
+            }
+        }, 5);
+    }
 
 })
 
@@ -186,6 +214,17 @@ services.addEventListener("click",()=>{
         }
         
     },5)
+    if(say>=1500){
+
+        let intervall= setInterval(() => {
+            window.scrollTo(0,say);
+            say-=10;
+            if(say<=1500){
+                clearInterval(intervall)
+
+            }
+        }, 5);
+    }
     
 
 })
@@ -204,6 +243,7 @@ booking.addEventListener("click",()=>{
     
 
 })
+
 
 
 

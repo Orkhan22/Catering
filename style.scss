@@ -752,7 +752,8 @@ nav {
       color: #666666;
       background-color: #fff;
       border-radius: 15px;
-      box-shadow: 0px 0px 20px 10px ;
+      box-shadow: 28px -9px 53px -26px rgba(0,0,0,0.75);
+      transition: 0.3s;
       cursor: pointer;
       
       .card-info {
@@ -760,7 +761,7 @@ nav {
         height: 503px;
       
         .card-photo {
-        background-image: url(./asset/blogsec/image_1.jpg.webp);
+        
         height: 300px;
         overflow: hidden;
         background-size: cover;
@@ -801,3 +802,14 @@ nav {
     }
   }
 }
+
+.blog-card:hover{
+  box-shadow: 28px -9px 98px -5px rgba(107,105,107,1) !important;
+    box-shadow: 0 0 50px rgb(17 17 17 / 10%);
+    transform: rotate(-2deg) translateY(-5px) scale(1.035);
+    -webkit-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+    -moz-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+    -ms-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+    -o-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  }
+    // border: 1px solid red;

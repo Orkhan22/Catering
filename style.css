@@ -704,7 +704,8 @@ nav .navbar-container .navbar-list ul a:hover {
   color: #666666;
   background-color: #fff;
   border-radius: 15px;
-  box-shadow: 0px 0px 20px 10px;
+  box-shadow: 28px -9px 53px -26px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
   cursor: pointer;
 }
 .Blog .blog-container .blog-card .card-info {
@@ -712,7 +713,6 @@ nav .navbar-container .navbar-list ul a:hover {
   height: 503px;
 }
 .Blog .blog-container .blog-card .card-info .card-photo {
-  background-image: url(./asset/blogsec/image_1.jpg.webp);
   height: 300px;
   overflow: hidden;
   background-size: cover;
@@ -746,4 +746,14 @@ nav .navbar-container .navbar-list ul a:hover {
 .Blog .blog-container .blog-card .card-info .card-text .read a {
   color: #000000;
   font-size: 14px;
+}
+
+.blog-card:hover {
+  box-shadow: 28px -9px 98px -5px rgb(107, 105, 107) !important;
+  box-shadow: 0 0 50px rgba(17, 17, 17, 0.1);
+  transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -webkit-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -moz-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -ms-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -o-transform: rotate(-2deg) translateY(-5px) scale(1.035);
 }/*# sourceMappingURL=style.css.map */
