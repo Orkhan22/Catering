@@ -12,12 +12,20 @@ body {
   height: auto;
 }
 
+.hidden{
+  display: none !important;
+}
+small{
+
+  color: red;
+}
+
 nav {
   width: 100%;
   position: fixed;
   z-index: 50;
   background-color: #00000045;
-  
+
   .navbar-container {
     width: 75%;
     height: 65px;
@@ -34,7 +42,6 @@ nav {
         letter-spacing: 2px;
         padding: 17px 13px;
         color: white;
-       
       }
     }
     .navbar-list {
@@ -68,7 +75,8 @@ nav {
           }
         }
         a {
-          &:hover {color: yellow;
+          &:hover {
+            color: yellow;
           }
           &:active {
           }
@@ -224,6 +232,13 @@ nav {
         width: 320px;
         height: 520px;
         object-fit: cover;
+        transition: 0.67s;
+        cursor: pointer;
+        &:hover{
+          transition: 0.67s;
+
+          transform: scale(1.0387);
+        }
       }
     }
     .cook-info {
@@ -454,6 +469,10 @@ nav {
     .menu-card {
       width: 50%;
       display: flex;
+      transition: transform .5s;
+      &:hover{
+        transform: scale(0.9);
+      }
 
       .imga {
         width: 50%;
@@ -465,7 +484,7 @@ nav {
       .card-info {
         width: 50%;
         padding: 30px 20px;
-        border: 1px solid #e6e6e6;
+        // border: 1px solid #e6e6e6;
         .div {
           width: 100%;
           h2 {
@@ -493,6 +512,10 @@ nav {
             padding: 0.375rem 0.75rem;
             font-size: 1rem;
             line-height: 1.5;
+
+            &:hover {
+              background-color: red;
+            }
           }
         }
       }
@@ -547,6 +570,15 @@ nav {
       height: 441px;
       margin-top: 150px;
       .photo {
+        cursor: pointer;
+        border-radius: 16px;
+        transition: 0.34s;
+
+        &:hover {
+          transition: 0.34s;
+          box-shadow: 0px 0px 20px 5px rgb(179 145 101 / 63%);
+        }
+
         img {
           width: 255px;
           height: 320px;
@@ -592,8 +624,6 @@ nav {
 }
 
 .Booking {
-  
-
   .booking-container {
     position: relative;
     margin: 0 auto;
@@ -639,7 +669,7 @@ nav {
       }
       .form-booking {
         width: 665px;
-        height: 600px;
+        height: 650px;
         position: absolute;
         background-color: white;
         position: relative;
@@ -678,6 +708,8 @@ nav {
               box-shadow: none !important;
               border: 1px solid rgba(0, 0, 0, 0.1);
               width: 274px;
+              outline: none;
+              
             }
           }
         }
@@ -686,10 +718,40 @@ nav {
           background: #c8a97e;
           border: 1px solid #c8a97e;
           color: #fff;
-          bottom: 10%;
+          // bottom: -10%;
           left: 36%;
           cursor: pointer;
           padding: 15px 30px;
+        }
+        .rezerv{
+          width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+          .hu{
+position: relative;
+            width: 400px;
+            height: 201px;
+           border-radius: 15px;
+            background: #644a0438;
+          img{
+            position: absolute;
+            top: 20px;
+            right: 160px;
+          }
+          p{
+            
+            color: #516452;
+            position: absolute;
+            top: 55%;
+            right: 13%;
+            font-size: 25px;
+            font-family: 'Poppins';
+
+          }
+        }
         }
       }
     }
@@ -699,7 +761,7 @@ nav {
 .Blog {
   width: 100%;
   padding: 7em 0;
-  background-color: #fafafa ;
+  background-color: #fafafa;
   .blog-container {
     width: 80%;
     margin: 0 auto;
@@ -752,23 +814,22 @@ nav {
       color: #666666;
       background-color: #fff;
       border-radius: 15px;
-      box-shadow: 28px -9px 53px -26px rgba(0,0,0,0.75);
+      box-shadow: 28px -9px 53px -26px rgba(0, 0, 0, 0.75);
       transition: 0.3s;
       cursor: pointer;
-      
+
       .card-info {
         width: 350px;
         height: 503px;
-      
+
         .card-photo {
-        
-        height: 300px;
-        overflow: hidden;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        display: block;
-        margin-top: 10px;
+          height: 300px;
+          overflow: hidden;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: block;
+          margin-top: 10px;
         }
         .card-text {
           color: black;
@@ -783,19 +844,19 @@ nav {
             font-size: 20px;
             margin-bottom: 16px;
             font-weight: 600;
-          
+
             a {
-              color:black;
+              color: black;
             }
           }
           .read {
             color: black;
             display: flex;
             justify-content: space-between;
-           a{
-            color: #000000;
-            font-size: 14px;
-           }
+            a {
+              color: #000000;
+              font-size: 14px;
+            }
           }
         }
       }
@@ -803,13 +864,88 @@ nav {
   }
 }
 
-.blog-card:hover{
-  box-shadow: 28px -9px 98px -5px rgba(107,105,107,1) !important;
-    box-shadow: 0 0 50px rgb(17 17 17 / 10%);
-    transform: rotate(-2deg) translateY(-5px) scale(1.035);
-    -webkit-transform: rotate(-2deg) translateY(-5px) scale(1.035);
-    -moz-transform: rotate(-2deg) translateY(-5px) scale(1.035);
-    -ms-transform: rotate(-2deg) translateY(-5px) scale(1.035);
-    -o-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+.blog-card:hover {
+  box-shadow: 28px -9px 98px -5px rgba(107, 105, 107, 1) !important;
+  box-shadow: 0 0 50px rgb(17 17 17 / 10%);
+  transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -webkit-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -moz-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -ms-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+  -o-transform: rotate(-2deg) translateY(-5px) scale(1.035);
+}
+// border: 1px solid red;
+button:hover {
+  background-color: red;
+}
+
+.footer {
+  width: 100%;
+  height: 330px;
+  background-image: url(./asset/360_F_500767502_AdezwSUsyb04l79RpV6zubKulRnIHpd0.jpg);
+  font-size: 14px;
+  .foot-container {
+    padding: 30px 0px;
+    width: 80%;
+    display: grid;
+    grid: 150px / auto auto auto;
+    margin: 0 auto;
+    .ul {
+      
+      h3{
+        margin-bottom: 40px;
+      }
+      
+
+      p {
+        margin: 10px 0px;
+        opacity: 70%;
+      }
+    }
+    .hours {
+      h3{
+        margin-bottom: 40px;
+      }
+      ul {
+        
+        
+      }
+      li {
+        margin: 10px 0px;
+        list-style-type: none;
+        opacity: 70%;
+        
+        span {
+        }
+      }
+    }
+    .newsletter {
+      h3{margin-bottom: 40px;}
+      p{
+        opacity: 70%;
+      }
+      input {
+        border-radius: 2px;
+        width: 60%;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: none;
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 16px;
+        margin: 10px 0px;
+        cursor: pointer;
+        
+      }
+      ul {
+      }
+      button {
+        width: 255px;
+        height: 52px;
+        background-color: #c8a97e;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
-    // border: 1px solid red;
+}
+
+
