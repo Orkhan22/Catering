@@ -17,6 +17,9 @@ const timeerror = document.querySelector(".timeerror");
 const formInfo=document.querySelector(".form-info")
 const rezerv=document.querySelector(".rezerv")
 // const numbererror = document.querySelector(".numbererror");
+
+
+
 formm.addEventListener("submit", (e) => {
     e.preventDefault();
     if (sifr.test(formm.name.value)) {
